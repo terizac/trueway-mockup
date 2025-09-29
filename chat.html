@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trueway - 聊天</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-screen">
+            <!-- 狀態欄 -->
+            <div class="status-bar">
+                <div class="status-left">
+                    <span>9:41</span>
+                </div>
+                <div class="status-right">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <div class="battery">
+                        <div class="battery-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主要內容 -->
+            <div class="main-content" style="background: #f8f9fa;">
+                <!-- 頂部標題與搜尋 -->
+                <div style="background: white; padding: 16px 20px; border-bottom: 1px solid #f0f0f0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <h1 style="font-size: 28px; font-weight: 700; color: #1d1d1f;">聊天</h1>
+                        <i class="fas fa-edit" style="font-size: 20px; color: #667eea;"></i>
+                    </div>
+                    
+                    <div style="position: relative;">
+                        <input type="text" class="input-field" placeholder="搜尋聊天記錄..." style="padding-left: 44px;">
+                        <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #8e8e93;"></i>
+                    </div>
+                </div>
+
+                <!-- 聊天類型標籤 -->
+                <div style="padding: 16px 20px; background: white; border-bottom: 1px solid #f0f0f0;">
+                    <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;">
+                        <span class="tag" style="background: #667eea; color: white; white-space: nowrap;">全部</span>
+                        <span class="tag" style="white-space: nowrap;">1對1</span>
+                        <span class="tag" style="white-space: nowrap;">活動群組</span>
+                        <span class="tag" style="white-space: nowrap;">未讀</span>
+                    </div>
+                </div>
+
+                <!-- 聊天列表 -->
+                <div style="background: white;">
+                    <!-- 聊天項目 1 - 有未讀訊息 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center; position: relative;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=50&h=50&fit=crop&crop=face" class="avatar" style="width: 50px; height: 50px;">
+                            <div style="position: absolute; bottom: 2px; right: 2px; width: 12px; height: 12px; background: #34c759; border: 2px solid white; border-radius: 50%;"></div>
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f;">Emma</h3>
+                                <span style="font-size: 12px; color: #8e8e93;">剛才</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; margin-right: 8px;">那個攝影聚會真的很棒！下次一起去吧 📸</p>
+                                <div style="width: 20px; height: 20px; background: #667eea; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: 600;">2</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 聊天項目 2 - 活動群組 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <!-- 群組頭像疊加效果 -->
+                            <div style="position: relative; width: 50px; height: 50px;">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1d9?w=30&h=30&fit=crop&crop=face" class="avatar" style="width: 30px; height: 30px; position: absolute; top: 0; left: 0; border: 2px solid white;">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=30&h=30&fit=crop&crop=face" class="avatar" style="width: 30px; height: 30px; position: absolute; bottom: 0; right: 0; border: 2px solid white;">
+                            </div>
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <div style="display: flex; align-items: center;">
+                                    <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-right: 8px;">瑜伽體驗課</h3>
+                                    <i class="fas fa-users" style="color: #8e8e93; font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 12px; color: #8e8e93;">10分鐘前</span>
+                            </div>
+                            <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Sophie: 大家明天記得帶瑜伽墊哦！</p>
+                        </div>
+                    </div>
+
+                    <!-- 聊天項目 3 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" class="avatar" style="width: 50px; height: 50px;">
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f;">Alex</h3>
+                                <span style="font-size: 12px; color: #8e8e93;">30分鐘前</span>
+                            </div>
+                            <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">謝謝你推薦的書，真的很有啟發性！</p>
+                        </div>
+                    </div>
+
+                    <!-- 聊天項目 4 - 活動群組 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <div style="position: relative; width: 50px; height: 50px;">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=30&h=30&fit=crop&crop=face" class="avatar" style="width: 30px; height: 30px; position: absolute; top: 0; left: 0; border: 2px solid white;">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=30&h=30&fit=crop&crop=face" class="avatar" style="width: 30px; height: 30px; position: absolute; bottom: 0; right: 0; border: 2px solid white;">
+                            </div>
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <div style="display: flex; align-items: center;">
+                                    <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-right: 8px;">攝影愛好者</h3>
+                                    <i class="fas fa-users" style="color: #8e8e93; font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 12px; color: #8e8e93;">1小時前</span>
+                            </div>
+                            <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">David: 分享了一張照片</p>
+                        </div>
+                    </div>
+
+                    <!-- 聊天項目 5 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=50&h=50&fit=crop&crop=face" class="avatar" style="width: 50px; height: 50px;">
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f;">Lily</h3>
+                                <span style="font-size: 12px; color: #8e8e93;">昨天</span>
+                            </div>
+                            <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">期待下次的讀書會討論！</p>
+                        </div>
+                    </div>
+
+                    <!-- 聊天項目 6 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=50&h=50&fit=crop&crop=face" class="avatar" style="width: 50px; height: 50px;">
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f;">Maya</h3>
+                                <span style="font-size: 12px; color: #8e8e93;">昨天</span>
+                            </div>
+                            <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">你: 好的，明天見！</p>
+                        </div>
+                    </div>
+
+                    <!-- 聊天項目 7 - 活動群組 -->
+                    <div style="padding: 16px 20px; border-bottom: 1px solid #f5f5f5; display: flex; align-items: center;">
+                        <div style="position: relative; margin-right: 12px;">
+                            <div style="position: relative; width: 50px; height: 50px;">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=30&h=30&fit=crop&crop=face" class="avatar" style="width: 30px; height: 30px; position: absolute; top: 0; left: 0; border: 2px solid white;">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=30&h=30&fit=crop&crop=face" class="avatar" style="width: 30px; height: 30px; position: absolute; bottom: 0; right: 0; border: 2px solid white;">
+                            </div>
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <div style="display: flex; align-items: center;">
+                                    <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-right: 8px;">創意寫作工作坊</h3>
+                                    <i class="fas fa-users" style="color: #8e8e93; font-size: 12px;"></i>
+                                </div>
+                                <span style="font-size: 12px; color: #8e8e93;">3天前</span>
+                            </div>
+                            <p style="font-size: 14px; color: #8e8e93; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Lisa: 大家記得帶筆記本！</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速操作區域 -->
+                <div style="padding: 20px; background: #f8f9fa;">
+                    <h2 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 12px;">💡 聊天話題建議</h2>
+                    <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px;">
+                        <div class="card" style="min-width: 200px; padding: 12px; text-align: center;">
+                            <i class="fas fa-camera" style="color: #667eea; font-size: 20px; margin-bottom: 8px;"></i>
+                            <p style="font-size: 12px; color: #1d1d1f; font-weight: 500;">分享你的攝影作品</p>
+                        </div>
+                        <div class="card" style="min-width: 200px; padding: 12px; text-align: center;">
+                            <i class="fas fa-book" style="color: #667eea; font-size: 20px; margin-bottom: 8px;"></i>
+                            <p style="font-size: 12px; color: #1d1d1f; font-weight: 500;">推薦好書給朋友</p>
+                        </div>
+                        <div class="card" style="min-width: 200px; padding: 12px; text-align: center;">
+                            <i class="fas fa-coffee" style="color: #667eea; font-size: 20px; margin-bottom: 8px;"></i>
+                            <p style="font-size: 12px; color: #1d1d1f; font-weight: 500;">約個咖啡聊聊</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部導航 -->
+            <div class="bottom-nav">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>主頁</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>活動</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-comments"></i>
+                    <span>聊天</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 聊天詳情模擬彈窗 -->
+    <div id="chatDetailModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center;">
+        <div class="phone-container" style="margin: 0;">
+            <div class="phone-screen">
+                <!-- 聊天頁面頂部 -->
+                <div style="background: white; padding: 16px 20px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center;">
+                    <button onclick="closeChatDetail()" style="background: none; border: none; margin-right: 12px; color: #667eea; font-size: 16px;">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=40&h=40&fit=crop&crop=face" class="avatar" style="width: 40px; height: 40px; margin-right: 12px;">
+                    <div style="flex: 1;">
+                        <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f;">Emma</h3>
+                        <p style="font-size: 12px; color: #34c759;">線上</p>
+                    </div>
+                    <i class="fas fa-phone" style="color: #8e8e93; margin-right: 16px;"></i>
+                    <i class="fas fa-video" style="color: #8e8e93;"></i>
+                </div>
+
+                <!-- 聊天訊息區域 -->
+                <div style="flex: 1; padding: 20px; background: #f8f9fa; overflow-y: auto; height: calc(100% - 140px);">
+                    <!-- 對方訊息 -->
+                    <div style="display: flex; margin-bottom: 16px;">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=32&h=32&fit=crop&crop=face" class="avatar" style="width: 32px; height: 32px; margin-right: 8px;">
+                        <div>
+                            <div style="background: white; padding: 12px 16px; border-radius: 18px; max-width: 250px; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                <p style="font-size: 14px; color: #1d1d1f;">嗨！很高興在攝影聚會認識你 😊</p>
+                            </div>
+                            <span style="font-size: 11px; color: #8e8e93;">10:30</span>
+                        </div>
+                    </div>
+
+                    <!-- 我的訊息 -->
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+                        <div>
+                            <div style="background: #667eea; color: white; padding: 12px 16px; border-radius: 18px; max-width: 250px; margin-bottom: 4px;">
+                                <p style="font-size: 14px;">我也是！你拍的那張夕陽照片真的很棒</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <span style="font-size: 11px; color: #8e8e93;">10:32</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 對方訊息 -->
+                    <div style="display: flex; margin-bottom: 16px;">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=32&h=32&fit=crop&crop=face" class="avatar" style="width: 32px; height: 32px; margin-right: 8px;">
+                        <div>
+                            <div style="background: white; padding: 12px 16px; border-radius: 18px; max-width: 250px; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                <p style="font-size: 14px; color: #1d1d1f;">謝謝！那個地點是我的秘密基地 📸</p>
+                            </div>
+                            <span style="font-size: 11px; color: #8e8e93;">10:35</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; margin-bottom: 16px;">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=32&h=32&fit=crop&crop=face" class="avatar" style="width: 32px; height: 32px; margin-right: 8px;">
+                        <div>
+                            <div style="background: white; padding: 12px 16px; border-radius: 18px; max-width: 250px; margin-bottom: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                <p style="font-size: 14px; color: #1d1d1f;">下次可以一起去拍照嗎？</p>
+                            </div>
+                            <span style="font-size: 11px; color: #8e8e93;">剛才</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 訊息輸入區域 -->
+                <div style="background: white; padding: 12px 20px; border-top: 1px solid #f0f0f0; display: flex; align-items: center; gap: 12px;">
+                    <i class="fas fa-plus" style="color: #8e8e93; font-size: 20px;"></i>
+                    <input type="text" placeholder="輸入訊息..." style="flex: 1; padding: 10px 16px; border: 1px solid #e5e5ea; border-radius: 20px; font-size: 14px; background: #f2f2f7;">
+                    <i class="fas fa-microphone" style="color: #8e8e93; font-size: 20px;"></i>
+                    <button style="width: 32px; height: 32px; border-radius: 16px; border: none; background: #667eea; color: white; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-paper-plane" style="font-size: 14px;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 聊天項目點擊
+        const chatItems = document.querySelectorAll('div[style*="padding: 16px 20px; border-bottom: 1px solid #f5f5f5"]');
+        chatItems.forEach(item => {
+            item.addEventListener('click', function() {
+                console.log('打開聊天詳情');
+                document.getElementById('chatDetailModal').style.display = 'flex';
+            });
+        });
+
+        function closeChatDetail() {
+            document.getElementById('chatDetailModal').style.display = 'none';
+        }
+
+        // 搜尋功能
+        const searchInput = document.querySelector('input[placeholder*="搜尋"]');
+        searchInput.addEventListener('input', function(e) {
+            console.log('搜尋聊天:', e.target.value);
+        });
+
+        // 聊天類型篩選
+        const chatTags = document.querySelectorAll('.tag');
+        chatTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // 移除其他active狀態
+                chatTags.forEach(t => {
+                    t.style.background = 'rgba(0, 122, 255, 0.1)';
+                    t.style.color = '#007aff';
+                });
+                // 設置當前active
+                this.style.background = '#667eea';
+                this.style.color = 'white';
+                
+                console.log('篩選聊天類型:', this.textContent);
+            });
+        });
+
+        // 新增聊天按鈕
+        const newChatBtn = document.querySelector('.fa-edit').parentElement;
+        newChatBtn.addEventListener('click', function() {
+            console.log('新增聊天');
+        });
+
+        // 聊天話題建議點擊
+        const topicCards = document.querySelectorAll('div[style*="min-width: 200px"]');
+        topicCards.forEach(card => {
+            card.addEventListener('click', function() {
+                console.log('使用聊天話題建議');
+            });
+        });
+
+        // 模擬聊天訊息發送
+        const messageInput = document.querySelector('input[placeholder*="輸入訊息"]');
+        const sendButton = document.querySelector('button[style*="width: 32px"]');
+        
+        if (sendButton) {
+            sendButton.addEventListener('click', function() {
+                if (messageInput && messageInput.value.trim()) {
+                    console.log('發送訊息:', messageInput.value);
+                    messageInput.value = '';
+                }
+            });
+        }
+
+        if (messageInput) {
+            messageInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && this.value.trim()) {
+                    console.log('發送訊息:', this.value);
+                    this.value = '';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

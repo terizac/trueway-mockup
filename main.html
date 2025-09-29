@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trueway - 主頁</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-screen">
+            <!-- 狀態欄 -->
+            <div class="status-bar">
+                <div class="status-left">
+                    <span>9:41</span>
+                </div>
+                <div class="status-right">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <div class="battery">
+                        <div class="battery-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主要內容 -->
+            <div class="main-content" style="background: #f8f9fa;">
+                <!-- 頂部導航 -->
+                <div style="background: white; padding: 12px 20px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center;">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1d9?w=40&h=40&fit=crop&crop=face" class="avatar" style="width: 36px; height: 36px; margin-right: 12px;">
+                        <div>
+                            <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 2px;">Hi, Sarah</h3>
+                            <p style="font-size: 12px; color: #8e8e93;">準備好認識新朋友了嗎？</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <i class="fas fa-bell" style="font-size: 20px; color: #8e8e93;"></i>
+                        <i class="fas fa-sliders-h" style="font-size: 20px; color: #8e8e93;"></i>
+                    </div>
+                </div>
+
+                <!-- 配對卡片區域 (50-60%) -->
+                <div style="height: 50%; padding: 16px 20px; position: relative;">
+                    <div class="card" style="height: 100%; position: relative; overflow: hidden;">
+                        <!-- 背景圖片 -->
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=600&fit=crop&crop=face" style="width: 100%; height: 70%; object-fit: cover;">
+                        
+                        <!-- 用戶資訊覆蓋層 -->
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; padding: 40px 20px 20px;">
+                            <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 4px;">Emma, 25</h2>
+                            <p style="font-size: 14px; opacity: 0.9; margin-bottom: 12px;">
+                                <i class="fas fa-map-marker-alt" style="margin-right: 4px;"></i>
+                                距離你 2.5 公里
+                            </p>
+                            
+                            <!-- 興趣標籤 -->
+                            <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
+                                <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">攝影</span>
+                                <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">旅行</span>
+                                <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">瑜伽</span>
+                            </div>
+                            
+                            <!-- 聊天話題建議 -->
+                            <div style="background: rgba(255,255,255,0.15); border-radius: 8px; padding: 8px 12px; backdrop-filter: blur(10px);">
+                                <p style="font-size: 12px; opacity: 0.8; margin-bottom: 2px;">💡 聊天話題建議</p>
+                                <p style="font-size: 13px;">你們都喜歡攝影，可以聊聊最愛的拍攝地點</p>
+                            </div>
+                        </div>
+
+                        <!-- 滑動操作按鈕 -->
+                        <div style="position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px;">
+                            <button style="width: 50px; height: 50px; border-radius: 25px; border: none; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                                <i class="fas fa-times" style="color: #ff3b30; font-size: 20px;"></i>
+                            </button>
+                            <button style="width: 60px; height: 60px; border-radius: 30px; border: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                                <i class="fas fa-heart" style="color: white; font-size: 24px;"></i>
+                            </button>
+                            <button style="width: 50px; height: 50px; border-radius: 25px; border: none; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                                <i class="fas fa-star" style="color: #ff9500; font-size: 20px;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速入口區域 (20%) -->
+                <div style="height: 20%; padding: 20px; margin-top: 40px;">
+                    <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 12px;">快速探索</h3>
+                    <div style="display: flex; gap: 12px; height: 80px;">
+                        <div class="card" style="flex: 1; padding: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            <i class="fas fa-users" style="color: #667eea; font-size: 20px; margin-bottom: 4px;"></i>
+                            <span style="font-size: 12px; color: #1d1d1f; font-weight: 500;">推薦朋友</span>
+                        </div>
+                        <div class="card" style="flex: 1; padding: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            <i class="fas fa-compass" style="color: #667eea; font-size: 20px; margin-bottom: 4px;"></i>
+                            <span style="font-size: 12px; color: #1d1d1f; font-weight: 500;">今天要做什麼</span>
+                        </div>
+                        <div class="card" style="flex: 1; padding: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            <i class="fas fa-brain" style="color: #667eea; font-size: 20px; margin-bottom: 4px;"></i>
+                            <span style="font-size: 12px; color: #1d1d1f; font-weight: 500;">自我測驗</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 目標導向分類 (20%) -->
+                <div style="height: 20%; padding: 0 20px 20px;">
+                    <h3 style="font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 12px;">尋找你的理想連結</h3>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="card" style="padding: 16px; display: flex; align-items: center;">
+                            <div style="width: 40px; height: 40px; background: rgba(52, 199, 89, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 12px;">
+                                <i class="fas fa-user-friends" style="color: #34c759; font-size: 18px;"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="font-size: 14px; font-weight: 600; color: #1d1d1f; margin-bottom: 2px;">新朋友</h4>
+                                <p style="font-size: 12px; color: #8e8e93;">擴展社交圈，認識有趣的人</p>
+                            </div>
+                            <i class="fas fa-chevron-right" style="color: #c7c7cc; font-size: 12px;"></i>
+                        </div>
+                        
+                        <div class="card" style="padding: 16px; display: flex; align-items: center;">
+                            <div style="width: 40px; height: 40px; background: rgba(255, 45, 85, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 12px;">
+                                <i class="fas fa-heart" style="color: #ff2d55; font-size: 18px;"></i>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="font-size: 14px; font-weight: 600; color: #1d1d1f; margin-bottom: 2px;">長期伴侶</h4>
+                                <p style="font-size: 12px; color: #8e8e93;">尋找深度連結和長久關係</p>
+                            </div>
+                            <i class="fas fa-chevron-right" style="color: #c7c7cc; font-size: 12px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部導航 -->
+            <div class="bottom-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>主頁</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>活動</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>聊天</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 卡片滑動功能模擬
+        let currentCard = document.querySelector('.card');
+        let startX = 0;
+        let currentX = 0;
+        let cardBeingDragged = false;
+
+        currentCard.addEventListener('touchstart', handleTouchStart, {passive: true});
+        currentCard.addEventListener('touchmove', handleTouchMove, {passive: true});
+        currentCard.addEventListener('touchend', handleTouchEnd);
+
+        function handleTouchStart(e) {
+            startX = e.touches[0].clientX;
+            cardBeingDragged = true;
+        }
+
+        function handleTouchMove(e) {
+            if (!cardBeingDragged) return;
+            currentX = e.touches[0].clientX - startX;
+            currentCard.style.transform = `translateX(${currentX}px) rotate(${currentX * 0.1}deg)`;
+            currentCard.style.opacity = 1 - Math.abs(currentX) / 300;
+        }
+
+        function handleTouchEnd() {
+            cardBeingDragged = false;
+            if (Math.abs(currentX) > 100) {
+                // 滑動超過閾值，移除卡片
+                currentCard.style.transform = `translateX(${currentX > 0 ? 400 : -400}px) rotate(${currentX * 0.2}deg)`;
+                currentCard.style.opacity = 0;
+                setTimeout(() => {
+                    loadNextCard();
+                }, 300);
+            } else {
+                // 回到原位
+                currentCard.style.transform = 'translateX(0) rotate(0)';
+                currentCard.style.opacity = 1;
+            }
+            currentX = 0;
+        }
+
+        function loadNextCard() {
+            // 這裡可以加載下一張卡片的邏輯
+            currentCard.style.transform = 'translateX(0) rotate(0)';
+            currentCard.style.opacity = 1;
+        }
+    </script>
+</body>
+</html>

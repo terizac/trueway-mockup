@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trueway - 活動</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-screen">
+            <!-- 狀態欄 -->
+            <div class="status-bar">
+                <div class="status-left">
+                    <span>9:41</span>
+                </div>
+                <div class="status-right">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <div class="battery">
+                        <div class="battery-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主要內容 -->
+            <div class="main-content" style="background: #f8f9fa;">
+                <!-- 頂部標題與篩選 -->
+                <div style="background: white; padding: 16px 20px; border-bottom: 1px solid #f0f0f0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <h1 style="font-size: 28px; font-weight: 700; color: #1d1d1f;">活動</h1>
+                        <div style="display: flex; gap: 12px;">
+                            <i class="fas fa-filter" style="font-size: 20px; color: #8e8e93;"></i>
+                            <i class="fas fa-plus" style="font-size: 20px; color: #667eea;"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- 活動類型標籤 -->
+                    <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;">
+                        <span class="tag" style="background: #667eea; color: white; white-space: nowrap;">全部</span>
+                        <span class="tag" style="white-space: nowrap;">線上講座</span>
+                        <span class="tag" style="white-space: nowrap;">實體聚會</span>
+                        <span class="tag" style="white-space: nowrap;">學習課程</span>
+                        <span class="tag" style="white-space: nowrap;">今日活動</span>
+                    </div>
+                </div>
+
+                <!-- 精選活動輪播 -->
+                <div style="padding: 20px; background: white; margin-bottom: 8px;">
+                    <h2 style="font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 16px;">🌟 精選活動</h2>
+                    <div style="display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px;">
+                        <!-- 精選活動卡片 1 -->
+                        <div class="card" style="min-width: 280px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=160&fit=crop" style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 16px;">
+                                <span class="tag" style="background: rgba(255, 59, 48, 0.1); color: #ff3b30; margin-bottom: 8px;">線上講座</span>
+                                <h3 style="font-size: 15px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; line-height: 1.3;">攝影構圖美學：從基礎到進階</h3>
+                                <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                                    <i class="fas fa-calendar" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">今天 20:00</span>
+                                </div>
+                                <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                    <i class="fas fa-user" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">講師：張攝影師</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-size: 14px; font-weight: 600; color: #667eea;">免費</span>
+                                    <button class="btn-secondary" style="padding: 6px 12px; font-size: 12px;">立即報名</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 精選活動卡片 2 -->
+                        <div class="card" style="min-width: 280px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=160&fit=crop" style="width: 100%; height: 140px; object-fit: cover;">
+                            <div style="padding: 16px;">
+                                <span class="tag" style="background: rgba(52, 199, 89, 0.1); color: #34c759; margin-bottom: 8px;">實體聚會</span>
+                                <h3 style="font-size: 15px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; line-height: 1.3;">週末登山健行團</h3>
+                                <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                                    <i class="fas fa-calendar" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">週六 06:00</span>
+                                </div>
+                                <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                                    <i class="fas fa-map-marker-alt" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">陽明山國家公園</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-size: 14px; font-weight: 600; color: #667eea;">NT$ 200</span>
+                                    <button class="btn-secondary" style="padding: 6px 12px; font-size: 12px;">查看詳情</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 我的活動 -->
+                <div style="padding: 20px; background: white; margin-bottom: 8px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <h2 style="font-size: 18px; font-weight: 600; color: #1d1d1f;">📅 我的活動</h2>
+                        <span style="font-size: 14px; color: #667eea;">查看全部</span>
+                    </div>
+                    
+                    <!-- 即將參加的活動 -->
+                    <div class="card" style="padding: 16px; margin-bottom: 12px; border-left: 4px solid #667eea;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="flex: 1;">
+                                <h3 style="font-size: 15px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">瑜伽初學者體驗課</h3>
+                                <div style="display: flex; align-items: center; margin-bottom: 4px;">
+                                    <i class="fas fa-clock" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">明天 19:00 - 20:30</span>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <i class="fas fa-map-marker-alt" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">信義運動中心</span>
+                                </div>
+                            </div>
+                            <span class="tag" style="background: rgba(255, 149, 0, 0.1); color: #ff9500;">即將開始</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 已報名的活動 -->
+                    <div class="card" style="padding: 16px; border-left: 4px solid #34c759;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="flex: 1;">
+                                <h3 style="font-size: 15px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">創意寫作工作坊</h3>
+                                <div style="display: flex; align-items: center; margin-bottom: 4px;">
+                                    <i class="fas fa-clock" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">下週日 14:00 - 17:00</span>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <i class="fas fa-map-marker-alt" style="color: #8e8e93; font-size: 12px; margin-right: 6px;"></i>
+                                    <span style="font-size: 12px; color: #8e8e93;">文創園區</span>
+                                </div>
+                            </div>
+                            <span class="tag" style="background: rgba(52, 199, 89, 0.1); color: #34c759;">已報名</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 推薦活動列表 -->
+                <div style="padding: 20px; background: white;">
+                    <h2 style="font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 16px;">💡 為你推薦</h2>
+                    
+                    <!-- 活動列表項目 -->
+                    <div class="card" style="padding: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=80&h=80&fit=crop" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover; margin-right: 12px;">
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 14px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">商業簡報技巧分享</h3>
+                            <div style="display: flex; align-items: center; margin-bottom: 4px;">
+                                <i class="fas fa-calendar" style="color: #8e8e93; font-size: 11px; margin-right: 4px;"></i>
+                                <span style="font-size: 11px; color: #8e8e93;">週三 19:30</span>
+                                <span style="margin: 0 8px; color: #e5e5ea;">|</span>
+                                <i class="fas fa-users" style="color: #8e8e93; font-size: 11px; margin-right: 4px;"></i>
+                                <span style="font-size: 11px; color: #8e8e93;">25人參加</span>
+                            </div>
+                            <span class="tag" style="font-size: 10px; padding: 4px 8px;">線上講座</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="font-size: 13px; font-weight: 600; color: #667eea;">免費</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="padding: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=80&h=80&fit=crop" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover; margin-right: 12px;">
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 14px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">手沖咖啡品鑑課程</h3>
+                            <div style="display: flex; align-items: center; margin-bottom: 4px;">
+                                <i class="fas fa-calendar" style="color: #8e8e93; font-size: 11px; margin-right: 4px;"></i>
+                                <span style="font-size: 11px; color: #8e8e93;">週六 15:00</span>
+                                <span style="margin: 0 8px; color: #e5e5ea;">|</span>
+                                <i class="fas fa-map-marker-alt" style="color: #8e8e93; font-size: 11px; margin-right: 4px;"></i>
+                                <span style="font-size: 11px; color: #8e8e93;">大安區</span>
+                            </div>
+                            <span class="tag" style="font-size: 10px; padding: 4px 8px;">學習課程</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="font-size: 13px; font-weight: 600; color: #667eea;">NT$ 800</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="padding: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=80&h=80&fit=crop" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover; margin-right: 12px;">
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 14px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px;">心靈成長讀書會</h3>
+                            <div style="display: flex; align-items: center; margin-bottom: 4px;">
+                                <i class="fas fa-calendar" style="color: #8e8e93; font-size: 11px; margin-right: 4px;"></i>
+                                <span style="font-size: 11px; color: #8e8e93;">每週日 14:00</span>
+                                <span style="margin: 0 8px; color: #e5e5ea;">|</span>
+                                <i class="fas fa-users" style="color: #8e8e93; font-size: 11px; margin-right: 4px;"></i>
+                                <span style="font-size: 11px; color: #8e8e93;">12人參加</span>
+                            </div>
+                            <span class="tag" style="font-size: 10px; padding: 4px 8px;">實體聚會</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="font-size: 13px; font-weight: 600; color: #667eea;">NT$ 150</span>
+                        </div>
+                    </div>
+
+                    <!-- 查看更多按鈕 -->
+                    <button class="btn-secondary" style="width: 100%; margin-top: 16px; padding: 12px;">
+                        查看更多活動
+                    </button>
+                </div>
+
+                <div style="height: 20px;"></div>
+            </div>
+
+            <!-- 底部導航 -->
+            <div class="bottom-nav">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>主頁</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>活動</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-comments"></i>
+                    <span>聊天</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 活動類型篩選
+        const activityTags = document.querySelectorAll('.tag');
+        activityTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // 移除其他active狀態
+                activityTags.forEach(t => {
+                    t.style.background = 'rgba(0, 122, 255, 0.1)';
+                    t.style.color = '#007aff';
+                });
+                // 設置當前active
+                this.style.background = '#667eea';
+                this.style.color = 'white';
+                
+                // 這裡可以加入篩選邏輯
+                console.log('篩選活動類型:', this.textContent);
+            });
+        });
+
+        // 報名按鈕點擊
+        const registerButtons = document.querySelectorAll('button[style*="立即報名"], button[style*="查看詳情"]');
+        registerButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('活動報名/查看詳情');
+                // 這裡可以加入報名邏輯
+            });
+        });
+
+        // 活動卡片點擊
+        const activityCards = document.querySelectorAll('.card');
+        activityCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (!e.target.matches('button')) {
+                    console.log('查看活動詳情');
+                    // 跳轉到活動詳情頁面
+                }
+            });
+        });
+
+        // 篩選按鈕
+        const filterBtn = document.querySelector('.fa-filter').parentElement;
+        filterBtn.addEventListener('click', function() {
+            console.log('打開篩選選項');
+            // 顯示篩選彈窗
+        });
+
+        // 新增活動按鈕
+        const addBtn = document.querySelector('.fa-plus').parentElement;
+        addBtn.addEventListener('click', function() {
+            console.log('新增活動');
+            // 跳轉到新增活動頁面
+        });
+    </script>
+</body>
+</html>
